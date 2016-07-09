@@ -59,7 +59,9 @@ app.get("/*", function (req, res, next) {
   if (agent && agent.os && agent.os.family){
       rc.software = agent.os.family;
   }
-  rc.ipaddress = req.ip;
+
+  rc.ipaddress = req.headers;
+
   res.json(rc);
 
 });
