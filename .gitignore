@@ -1,0 +1,7 @@
+node_modules
+*.log
+comments.txt
+.jslintrc
+gulpfile.js
+live-server.js
+.jsbeautifyrc

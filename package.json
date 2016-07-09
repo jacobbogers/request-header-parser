@@ -1,0 +1,40 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "a timestamp mircoservice FCC project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobbogers/timestamp-microservice.git"
+  },
+  "keywords": [
+    "timestamp",
+    "microservice"
+  ],
+  "author": "Jacob Bogers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacobbogers/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/jacobbogers/timestamp-microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "connect-timeout": "^1.7.0",
+    "express": "^4.14.0",
+    "moment": "^2.14.1",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "response-time": "^2.3.1",
+    "serve-favicon": "^2.3.0",
+    "time-out": "0.0.3",
+    "useragent": "^2.1.9"
+  },
+  "devDependencies": {
+    "ejs": "^2.4.2"
+  }
+}
