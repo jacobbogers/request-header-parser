@@ -61,7 +61,7 @@ app.get("/*", function (req, res, next) {
   }
   var x_for = req.get('x-forwarded-for');
   rc.ipaddress = x_for;
-  if (x_for)
+  if (!x_for){
       rc.ipaddress = req.ip;//fallback
   }
 
