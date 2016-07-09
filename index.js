@@ -59,8 +59,11 @@ app.get("/*", function (req, res, next) {
   if (agent && agent.os && agent.os.family){
       rc.software = agent.os.family;
   }
-
-  rc.ipaddress = req.headers;
+  var x_for = req.get('x-forwarded-for');
+  rc.ipaddress = x_for;
+  if (x_for)
+      rc.ipaddress = req.ip;//fallback
+  }
 
   res.json(rc);
 
